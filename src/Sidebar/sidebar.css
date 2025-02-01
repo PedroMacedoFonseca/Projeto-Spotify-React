@@ -1,0 +1,265 @@
+body {
+    background-color: black;
+    font-family: var(--font-dm-sans);
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 300px;
+    height: 100vh;
+    padding: 8px;
+    background-color: #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    gap: 0; 
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-bottom: 30px; 
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.sidebar_navegation {
+    padding: 10px 0 0 1px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0px;
+    max-width: 250px !important;
+}
+
+.logo a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100% !important;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.sidebar nav ul {
+    background-color: #121212;
+    list-style-type: none;
+    padding: 0 10px 4px 20px;
+    border-radius: 15px;
+}
+
+.sidebar nav ul li {
+    padding: 5px 0;
+}
+
+.sidebar nav ul li button {
+    color: #fbd000;
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar nav ul li button:focus,
+.sidebar nav ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+.sidebar nav ul li button .fa {
+    margin-right: 10px;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 4px;
+    color: #fbd000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.library .library_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library_button {
+    display: flex;
+    margin-right: 10px;
+    color: #d32020;
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 24px 10px;
+    cursor: pointer;
+}
+
+.library_button:hover {
+    opacity: 0.8;
+}
+
+.library .library_button .fa {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fbd000;
+    margin-right: 10px;
+    padding-right: 8px;
+}
+
+.library .library_content .fa-plus {
+    margin: 24px 10px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.library .fa-plus.clicked {
+    transform: scale(1.2);
+  }
+
+.section-playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fbd000;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    color: #000;
+    border: 5px solid #fff;
+}
+
+.section-playlist .section-playlist_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-playlist_content .text {
+    padding-bottom: 5px;
+    color: #121212;
+}
+
+.section-playlist_content .title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.section-playlist_content .subtitle {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.section-playlist_content .section-playlist_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#d32020;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    width: 113px;
+    margin-top: 4px;
+    outline: 10px #000;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.section-playlist_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-music {
+    font-size: 20px;
+    color: #000;
+}
+
+.languages .languages_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 170px;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 5px;
+    margin-top: 1px;
+}
+
+.cookies button {
+    background-color: #121212;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+}
+
+.cookies button:hover {
+    background-color: #fbd000;
+    color: #121212;
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+    height: 100vh;
+}

@@ -1,0 +1,77 @@
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #fbd000, #d32020);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.disclaimer-premium .text {
+    flex-shrink: 0;
+}
+
+.disclaimer-premium .disclaimer-premium_title {
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium_subtitle {
+    color: #121212;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.disclaimer-premium .disclaimer-premium_bottom {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+    border: 5px solid #fff;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.disclaimer-premium .disclaimer-premium_bottom button {
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.disclaimer-premium .disclaimer-premium_bottom:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.close-footer {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #121212;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
